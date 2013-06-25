@@ -1,0 +1,21 @@
+The CXRO Instruction Guide to Installing the Princeton Instruments SDK.
+
+Windows:
+
+- install pvcam32.exe as administrator
+- run RegisterActxprxyAndIeproxy.cmd as administrator (This fixes an issue in Explorer where a new
+	window would be opened for each folder regardless of configuration).
+- Done.
+
+Linux:
+
+- cd to ./SDK/Linux/pvcam2.7.1.7/
+- sudo sh ./install_sdk.sh
+- cd to ./SDK/Linux/
+- sudo dpkg -i pvcam-pilk-usb-dkms_1.0.3-1ubuntu1_all.deb
+- cd to ./SDK/Linux/usb/
+- sudo cp 10-pi.rules /etc/udev/rules.d/
+- add the camera's user to the group 'video'
+- usermod -a -G video <username>
+- sudo udevadm control --reload-rules
+- a reboot may be required.

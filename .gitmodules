@@ -1,0 +1,6 @@
+[submodule "SDK/pvcam-pilk"]
+	path = SDK/pvcam-pilk
+	url = http://github.com/delmic/pvcam-pilk
+[submodule "lib/java/RAWMaker"]
+	path = lib/java/RAWMaker
+	url = https://github.com/SeatherMarqx0/RAWMaker
